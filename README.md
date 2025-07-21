@@ -17,7 +17,7 @@ Engine Control Unit (ECU) simulator written in Python. This project emulates on 
 
 ---
 
-## 🧰 Technologies
+## Technologies
 
 - Python 3.11
 - `unittest` for testing
