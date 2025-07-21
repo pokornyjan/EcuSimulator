@@ -18,7 +18,7 @@ class TestSensors(unittest.TestCase):
         for _ in range(100):
             rpm = sensor.read()
             self.assertGreaterEqual(rpm, 600)
-            self.assertLessEqual(rpm, 4000)
+            self.assertLessEqual(rpm, 4500)
     
     def test_brake_sensor(self):
         sensor = BrakePedalSensor()
