@@ -7,5 +7,6 @@ class RPMSensor():
 
     def read(self):
         change = random.choice([-200, -100, 0, 100, 300])
-        self.rpm = max(500, self.rpm + change)
+        if self.rpm + change < 5000:
+            self.rpm = max(500, self.rpm + change)
         return self.rpm
